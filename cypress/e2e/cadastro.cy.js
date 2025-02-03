@@ -5,12 +5,7 @@ describe('Site adopet - Cadastro', () => {
   })
 
   it('Deve realizar o cadastro de usuário com sucesso', () => {
-    cy.get('[data-test="register-button"]').click();
-    cy.get('[data-test="input-name"]').type('María José');
-    cy.get('[data-test="input-email"').type('maria.jose@mailinator.com');
-    cy.get('[data-test="input-password"]').type('Mj123456');
-    cy.get('[data-test="input-confirm-password"]').type('Mj123456');
-    cy.get('[data-test="submit-button"]').should('be.visible').click();
+    cy.cadastrar('Marina','marinateste@teste.com','senha123')
   })
 
   it('Deve retornar falha ao tentar cadastrar com senha fora do padrão de segurança', () => {
@@ -22,7 +17,7 @@ describe('Site adopet - Cadastro', () => {
     cy.get('[data-test="submit-button"]').should('be.visible').click();
   })
 
-  it.only('Deve retornar falha ao preencher campo de senha e confirmação de senha com dados diferentes', () => {
+  it('Deve retornar falha ao preencher campo de senha e confirmação de senha com dados diferentes', () => {
     cy.get('[data-test="register-button"]').click();
     cy.get('[data-test="input-name"]').type('María José');
     cy.get('[data-test="input-email"').type('maria.jose@mailinator.com');
