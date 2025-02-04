@@ -1,0 +1,30 @@
+{
+    "usuarios": [
+      {
+        "nome": "Mariana de la Cruz",
+        "email": "mariana@teste.br",
+        "senha": "Senha123"
+      },
+      {
+        "nome": "Fernando Mendoza",
+        "email": "fernando@teste.br",
+        "senha": "Amigo456"
+      },
+      {
+        "nome": "Isabella Santamaría",
+        "email": "isabella@teste.br",
+        "senha": "Florita789"
+      },
+      {
+        "nome": "Diego de la Vega",
+        "email": "diego@teste.br",
+        "senha": "Vega234"
+      },
+      {
+        "nome": "Lucía Ríos",
+        "email": "lucia@teste.br",
+        "senha": "Rios567"
+      }
+    ]
+  }
+  
