@@ -5,7 +5,7 @@ describe('Site adopet - Cadastro', () => {
   })
 
   it('Deve realizar o cadastro de usuário com sucesso', () => {
-    cy.cadastrar('Marina','marinateste@teste.com','senha123')
+    cy.cadastrar('Marina','marinateste@teste.com','Senha123')
   })
 
   it('Deve retornar falha ao tentar cadastrar com senha fora do padrão de segurança', () => {

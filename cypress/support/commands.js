@@ -5,6 +5,7 @@ Cypress.Commands.add('cadastrar', (nome, email, senha) => {
     cy.get('[data-test="input-password"]').type(senha);
     cy.get('[data-test="input-confirm-password"]').type(senha);
     cy.get('[data-test="submit-button"]').should('be.visible').click();
+    
 })
 
 Cypress.Commands.add('login', (email, senha) => { 
